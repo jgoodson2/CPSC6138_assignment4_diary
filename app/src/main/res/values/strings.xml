@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">CPSC6138_assignment4_diary</string>
+    <string name="enter_a_password">Enter a password:</string>
+    <string name="enter_a_username">Enter a username:</string>
+    <string name="sign_up">Sign up!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">Password:</string>
+    <string name="username">Username</string>
 </resources>

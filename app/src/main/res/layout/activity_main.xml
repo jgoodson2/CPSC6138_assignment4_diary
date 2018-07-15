@@ -8,15 +8,62 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="62dp"
+        tools:ignore="MissingConstraints">
 
         <Button
-            android:id="@+id/bt_SignIn"
+            android:id="@+id/btn_SignIn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="155dp"
-            android:text="Sign In" />
+            android:text="@string/sign_in" />
+
+        <Button
+            android:id="@+id/btn_signUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:onClick="goToSignUp"
+            android:text="@string/sign_up" />
+
+        <TextView
+            android:id="@+id/lbl_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_password"
+            android:layout_centerHorizontal="true"
+            android:text="@string/password"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/lbl_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txt_username"
+            android:layout_centerHorizontal="true"
+            android:text="@string/username"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="227dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_SignIn"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lbl_password"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
