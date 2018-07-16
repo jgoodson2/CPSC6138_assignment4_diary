@@ -19,6 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="155dp"
+            android:onClick="authenticateUser"
             android:text="@string/sign_in" />
 
         <Button
@@ -33,7 +34,7 @@
             android:id="@+id/lbl_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/txt_password"
+            android:layout_above="@+id/txt_signin_password"
             android:layout_centerHorizontal="true"
             android:text="@string/password"
             android:textSize="24sp" />
@@ -42,13 +43,13 @@
             android:id="@+id/lbl_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/txt_username"
+            android:layout_above="@+id/txt_signin_username"
             android:layout_centerHorizontal="true"
             android:text="@string/username"
             android:textSize="24sp" />
 
         <EditText
-            android:id="@+id/txt_password"
+            android:id="@+id/txt_signin_password"
             android:layout_width="227dp"
             android:layout_height="wrap_content"
             android:layout_above="@+id/btn_SignIn"
@@ -57,7 +58,7 @@
             android:inputType="textPassword" />
 
         <EditText
-            android:id="@+id/txt_username"
+            android:id="@+id/txt_signin_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_above="@+id/lbl_password"
@@ -69,8 +70,9 @@
             android:id="@+id/lbl_userPwHint"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@+id/lbl_username"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="121dp"
             android:textColor="@android:color/darker_gray" />
 
     </RelativeLayout>
