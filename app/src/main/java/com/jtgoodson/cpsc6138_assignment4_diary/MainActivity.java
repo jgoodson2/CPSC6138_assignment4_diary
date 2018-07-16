@@ -37,6 +37,5 @@ public class MainActivity extends AppCompatActivity {
     public void goToSignUp(View view) {
         Intent i = new Intent(this, SignUpActivity.class);
         startActivity(i);
-        System.out.println("this is when i am supposed to go to sign up screen");
     }
 }

@@ -9,17 +9,17 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="68dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="29dp">
 
         <TextView
             android:id="@+id/lbl_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
+            android:layout_above="@+id/txt_signup_username"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="83dp"
+            android:layout_marginBottom="-182dp"
             android:text="@string/enter_a_username"
             android:textSize="24sp" />
 
@@ -27,8 +27,9 @@
             android:id="@+id/txt_signup_username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/lbl_username"
+            android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="182dp"
             android:ems="10"
             android:inputType="textPersonName" />
 
@@ -36,8 +37,9 @@
             android:id="@+id/lbl_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_signup_username"
+            android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginBottom="229dp"
             android:text="@string/enter_a_password"
             android:textSize="24sp" />
 
@@ -47,6 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/lbl_password"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="-229dp"
             android:ems="10"
             android:inputType="textPassword" />
 
@@ -54,7 +57,8 @@
             android:id="@+id/btn_signUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/txt_signup_password"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="95dp"
             android:onClick="saveInfo"
             android:text="@string/sign_up" />
     </RelativeLayout>

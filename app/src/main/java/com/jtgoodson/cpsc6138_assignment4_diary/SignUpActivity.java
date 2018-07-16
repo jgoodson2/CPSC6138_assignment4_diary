@@ -1,6 +1,7 @@
 package com.jtgoodson.cpsc6138_assignment4_diary;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,5 +30,10 @@ public class SignUpActivity extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(this, "Saved!", Toast.LENGTH_LONG).show();
+
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
+
     }
+
 }
