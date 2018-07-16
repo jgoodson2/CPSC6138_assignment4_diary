@@ -65,5 +65,13 @@
             android:ems="10"
             android:inputType="textPersonName" />
 
+        <TextView
+            android:id="@+id/lbl_userPwHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lbl_username"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/darker_gray" />
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
