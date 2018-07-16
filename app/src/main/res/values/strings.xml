@@ -7,4 +7,8 @@
     <string name="password">Password:</string>
     <string name="username">Username</string>
     <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="enter_diary_entry">Enter diary entry</string>
+    <string name="enter_subject">Enter Subject</string>
+    <string name="add">Add</string>
+    <string name="add_entry">Add Entry</string>
 </resources>

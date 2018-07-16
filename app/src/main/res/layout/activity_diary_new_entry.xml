@@ -6,4 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".DiaryNewEntryActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/enter_subject"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/text_diaryEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:ems="10"
+            android:hint="@string/enter_diary_entry"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btn_addDiaryEntry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/add" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

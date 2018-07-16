@@ -11,21 +11,23 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView"
+        <EditText
+            android:id="@+id/txt_diaryEntries"
             android:layout_width="match_parent"
-            android:layout_height="455dp"
-            android:layout_weight="9"
-            android:text="TextView" />
+            android:layout_height="wrap_content"
+            android:layout_weight="15"
+            android:ems="10"
+            android:inputType="textMultiLine" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btn_goToAddNewDiaryEntry"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
             android:layout_weight="1"
-            android:text="New Entry" />
+            android:onClick="goToNewDiaryEntry"
+            android:text="@string/add_entry" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
