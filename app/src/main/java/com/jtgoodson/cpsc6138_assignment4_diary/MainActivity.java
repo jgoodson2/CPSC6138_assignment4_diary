@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             System.out.println("user authenticated successfully");
-            Intent i = new Intent(this, DiaryMain.class);
+            Intent i = new Intent(this, DiaryMainActivity.class);
             startActivity(i);
         }
 
