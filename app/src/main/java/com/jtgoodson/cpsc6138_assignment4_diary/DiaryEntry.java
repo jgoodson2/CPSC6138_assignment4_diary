@@ -11,6 +11,9 @@ public class DiaryEntry {
         this._content = content;
     }
 
+    public DiaryEntry() {
+    }
+
     public int get_id() {
         return _id;
     }
