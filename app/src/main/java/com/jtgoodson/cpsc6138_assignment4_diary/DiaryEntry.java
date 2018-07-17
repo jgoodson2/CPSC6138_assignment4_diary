@@ -1,17 +1,29 @@
 package com.jtgoodson.cpsc6138_assignment4_diary;
 
+import java.sql.Time;
+
 public class DiaryEntry {
 
     private int _id;
+    private Time _timestamp;
     private String _subject;
     private String _content;
 
-    public DiaryEntry(String subject, String content) {
+    public DiaryEntry(Time timestamp, String subject, String content) {
+        this._timestamp = timestamp;
         this._subject = subject;
         this._content = content;
     }
 
     public DiaryEntry() {
+    }
+
+    public Time get_timestamp() {
+        return _timestamp;
+    }
+
+    public void set_timestamp(Time _timestamp) {
+        this._timestamp = _timestamp;
     }
 
     public int get_id() {
