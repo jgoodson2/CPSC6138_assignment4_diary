@@ -5,11 +5,14 @@ import java.sql.Time;
 public class DiaryEntry {
 
     private int _id;
-    private Time _timestamp;
+    private String _timestamp;
     private String _subject;
     private String _content;
 
-    public DiaryEntry(Time timestamp, String subject, String content) {
+    public DiaryEntry(String timestamp
+            , String subject
+            , String content
+    ) {
         this._timestamp = timestamp;
         this._subject = subject;
         this._content = content;
@@ -18,11 +21,11 @@ public class DiaryEntry {
     public DiaryEntry() {
     }
 
-    public Time get_timestamp() {
+    public String get_timestamp() {
         return _timestamp;
     }
 
-    public void set_timestamp(Time _timestamp) {
+    public void set_timestamp(String _timestamp) {
         this._timestamp = _timestamp;
     }
 

@@ -21,7 +21,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/text_diaryEntry"
+            android:id="@+id/txt_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="15"
@@ -34,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="insertRecord"
             android:text="@string/add" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
